@@ -173,7 +173,9 @@ void
 usage(int full) {
    printf( "Usage: cleaner <dirname> [<expiry>]\n");
    if (full) {
-       printf( " -v : verbose\n"
+       printf( " <expiry> is the minimum age in seconds of files to be deleted.\n"
+               "  It defaults to 86400.\n"
+               " -v : verbose\n"
                " -t : test only - don't delete any files\n"
                VERSION "\n");
    }
